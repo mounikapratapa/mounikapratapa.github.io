@@ -17,6 +17,7 @@
             justify-content: center;
             align-items: flex-start;
             min-height: 100vh;
+            box-sizing: border-box;
         }
         .container {
             background-color: #faf7f3; /* Off-white for a more authentic vintage page look */
@@ -27,10 +28,15 @@
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
             box-sizing: border-box;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
         }
         .about-me {
             text-align: center;
             margin-bottom: 20px;
+            width: 100%;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #8b5e3c;
         }
         .about-me h1 {
             color: #8b5e3c; /* Maroon title color */
@@ -41,19 +47,21 @@
         .about-me p {
             color: #2e2a26;
             font-size: 1rem;
+            margin: 0;
         }
         .content {
             display: flex;
             width: 100%;
             font-size: 0.9rem; /* Smaller font size */
+            position: relative;
         }
         .left-column {
             flex: 1;
             padding-right: 20px;
             border-right: 1px solid #8b5e3c;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            position: sticky;
+            top: 20px; /* Adjust as needed for top spacing */
+            align-self: flex-start;
         }
         .profile-photo {
             width: 150px;
@@ -80,6 +88,7 @@
         .right-column {
             flex: 2;
             padding-left: 20px;
+            overflow-y: auto;
         }
         h2 {
             font-size: 1.5rem;
@@ -122,6 +131,7 @@
             <h1>Mounika Pratapa</h1>
             <p>Ph.D. in Electrical and Computer Engineering</p>
             <p>University of Western Ontario, London, ON, Canada</p>
+            <p>I am a Ph.D. candidate specializing in cryptography and privacy-enhancing technologies. With over 5 years of research experience, I focus on developing secure multiparty computations and homomorphic encryption schemes. My passion lies in applying these technologies to real-world challenges like private information retrieval and privacy-preserving machine learning.</p>
         </div>
 
         <div class="content">
@@ -138,11 +148,6 @@
 
             <div class="right-column">
                 <section>
-                    <h2>About Me</h2>
-                    <p>I am a Ph.D. candidate specializing in cryptography and privacy-enhancing technologies. With over 5 years of research experience, I focus on developing secure multiparty computations and homomorphic encryption schemes. My passion lies in applying these technologies to real-world challenges like private information retrieval and privacy-preserving machine learning.</p>
-                </section>
-
-                <section>
                     <h2>News</h2>
                     <ul>
                         <li>August 2024: Our paper on secure similar patient query with homomorphically evaluated thresholds was accepted for publication in <a href="https://www.sciencedirect.com/journal/journal-of-information-security-and-applications"> Journal of Information Security and Applications</a></li>
@@ -151,7 +156,7 @@
                         <li>October 2023: Participated in the workshop on "Interdisciplinary approaches in cybersecurity" at the University of Waterloo.</li>
                         <li>August 2023: Presented our work at the International Conference on Selected Areas in Cryptography.</li>
                         <li>July 2023: Our paper on secure function extensions to additively homomorphic encryption was accepted at the Selected Areas in Cryptography conference <a href="https://sac-workshop.github.io/sac-2023/accepted-papers.html">SAC 2023</a></li>
-                        <li>December 2021: Successfully passed my PhD comprehensive exam.</a></li>
+                        <li>December 2021: Successfully passed my PhD comprehensive exam.</li>
                     </ul>
                 </section>
 
@@ -172,8 +177,4 @@
         </div>
 
         <footer>
-            <p>© 2024 Mounika Pratapa. All rights reserved.</p>
-        </footer>
-    </div>
-</body>
-</html>
+            <p>© 2024 Mounika Pratapa. All rights
