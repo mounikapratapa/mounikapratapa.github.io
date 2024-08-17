@@ -14,24 +14,20 @@
             margin: 0;
             padding: 20px;
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
             box-sizing: border-box;
         }
         .container {
+            display: flex;
             width: 100%;
             max-width: 1200px;
             box-sizing: border-box;
-            display: flex;
         }
         .left-column {
             flex: 1;
             padding-right: 20px;
             border-right: 1px solid #8b5e3c; /* Line between columns */
-            position: sticky;
-            top: 20px; /* Adjust as needed for top spacing */
-            align-self: flex-start;
             text-align: center;
         }
         .profile-photo {
@@ -58,7 +54,6 @@
         .right-column {
             flex: 2;
             padding-left: 20px;
-            overflow-y: auto;
         }
         .about-me {
             margin-bottom: 20px;
@@ -102,11 +97,12 @@
             text-decoration: underline;
         }
         footer {
+            width: 100%;
             text-align: center;
             margin-top: 20px;
             font-size: 0.8rem;
             color: #999;
-            width: 100%;
+            clear: both;
         }
     </style>
 </head>
