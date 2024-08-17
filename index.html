@@ -4,42 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mounika Pratapa</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Lora', serif;
-            background-color: #f8f4e3;
-            color: #5a4a3a;
+            background-color: #c7c3b5;
+            font-family: 'Uncial Antiqua', cursive;
             margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .book-container {
+            background-image: url('your-parchment-background-url.png'); /* Replace with your parchment background URL */
+            background-size: cover;
             padding: 20px;
-            line-height: 1.6;
-            background-image: url('https://example.com/coffee-stain.png'); /* Replace with your coffee stain image URL */
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            border: 5px solid #4b2e39;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        .book-container::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            background-image: url('your-ink-blot-url.png'); /* Replace with your ink blot URL */
+            background-size: contain;
             background-repeat: no-repeat;
-            background-position: top right;
-            background-size: 150px;
-            font-size: 0.9rem; /* Smaller font size */
         }
-        header {
+        h1 {
             text-align: center;
-            margin-bottom: 40px;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            font-weight: 700;
-        }
-        section {
-            margin-bottom: 40px;
+            color: #5e4429;
+            margin-bottom: 20px;
+            font-size: 3rem;
         }
         h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 10px;
             color: #8b7d6b;
             border-bottom: 1px solid #8b7d6b;
             padding-bottom: 5px;
         }
         p, li {
-            font-size: 1rem; /* Slightly smaller text */
+            color: #5e4429;
+            font-size: 1.2rem;
         }
         ul {
             list-style-type: none;
@@ -48,7 +62,7 @@
         a {
             color: #8b7d6b;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: bold;
         }
         a:hover {
             text-decoration: underline;
@@ -61,10 +75,10 @@
     </style>
 </head>
 <body>
-    <header>
+    <div class="book-container"> 
         <h1>Mounika Pratapa</h1>
         <p>Ph.D. Candidate in Electrical and Computer Engineering</p>
-    </header>
+   
 
     <section>
         <h2>About Me</h2>
@@ -99,5 +113,6 @@
     <footer>
         <p>© 2024 Mounika Pratapa. All rights reserved.</p>
     </footer>
+    </div>
 </body>
 </html>
