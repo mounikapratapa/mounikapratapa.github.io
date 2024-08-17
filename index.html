@@ -13,15 +13,16 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Ensure content is not vertically centered to avoid header cutting off */
             height: 100vh;
+            padding-top: 20px; /* Add padding at the top to prevent header cutoff */
         }
         .book-container {
             background-image: url('your-parchment-background-url.png'); /* Replace with your parchment background URL */
             background-size: cover;
-            padding: 20px;
-            width: 80%;
-            max-width: 800px;
+            padding: 40px 60px; /* Increase padding for better margins */
+            width: 90%; /* Increase width to give more horizontal space */
+            max-width: 1200px; /* Increase max-width for more horizontal room */
             height: auto;
             border: 5px solid #4b2e39;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -42,11 +43,11 @@
             text-align: center;
             color: #5e4429;
             margin-bottom: 20px;
-            font-size: 2rem; /* Smaller font size */
+            font-size: 1.5rem; /* Smaller font size */
             font-weight: normal;
         }
         h2 {
-            font-size: 1.5rem; /* Smaller font size */
+            font-size: 1.2rem; /* Smaller font size */
             margin-bottom: 10px;
             color: #8b7d6b;
             border-bottom: 1px solid #8b7d6b;
@@ -54,7 +55,7 @@
         }
         p, li {
             color: #5e4429;
-            font-size: 1rem; /* Smaller font size */
+            font-size: 0.9rem; /* Smaller font size */
             line-height: 1.4;
         }
         ul {
@@ -72,7 +73,7 @@
         footer {
             text-align: center;
             margin-top: 40px;
-            font-size: 0.8rem;
+            font-size: 0.7rem; /* Smaller font size */
         }
     </style>
 </head>
