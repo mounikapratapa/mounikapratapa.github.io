@@ -4,66 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mounika Pratapa</title>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=EB+Garamond&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #c7c3b5;
+            background-image: url('bg.jpg'); /* Background image reference */
+            background-size: cover;
+            background-position: center;
             font-family: 'EB Garamond', serif;
+            color: #3e2c2c;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Ensure content is not vertically centered to avoid header cutting off */
-            height: 100vh;
-            padding-top: 20px; /* Add padding at the top to prevent header cutoff */
+            align-items: flex-start;
+            padding-top: 20px;
+            min-height: 100vh; /* Ensures the background covers the full height */
         }
-        .book-container {
-            background-image: url('your-parchment-background-url.png'); /* Replace with your parchment background URL */
-            background-size: cover;
-            padding: 40px 60px; /* Increase padding for better margins */
-            width: 90%; /* Increase width to give more horizontal space */
-            max-width: 1200px; /* Increase max-width for more horizontal room */
-            height: auto;
-            border: 5px solid #4b2e39;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-            position: relative;
-        }
-        .book-container::before {
-            content: '';
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 100px;
-            height: 100px;
-            background-image: url('your-ink-blot-url.png'); /* Replace with your ink blot URL */
-            background-size: contain;
-            background-repeat: no-repeat;
+        .container {
+            background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background for content */
+            padding: 40px;
+            width: 85%;
+            max-width: 900px;
+            border: 1px solid #8b6b5b;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
         }
         h1 {
             text-align: center;
             color: #5e4429;
             margin-bottom: 20px;
-            font-size: 1.5rem; /* Smaller font size */
-            font-weight: normal;
+            font-size: 1.5rem;
+            font-family: 'Lora', serif;
         }
         h2 {
-            font-size: 1.2rem; /* Smaller font size */
+            font-size: 1.2rem;
             margin-bottom: 10px;
-            color: #8b7d6b;
+            color: #5e4429;
             border-bottom: 1px solid #8b7d6b;
             padding-bottom: 5px;
         }
         p, li {
-            color: #5e4429;
-            font-size: 0.9rem; /* Smaller font size */
-            line-height: 1.4;
+            color: #3e2c2c;
+            font-size: 0.9rem;
+            line-height: 1.6;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         a {
-            color: #8b7d6b;
+            color: #5e4429;
             text-decoration: none;
             font-weight: normal;
         }
@@ -72,13 +62,13 @@
         }
         footer {
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.7rem; /* Smaller font size */
+            margin-top: 20px;
+            font-size: 0.7rem;
         }
     </style>
 </head>
 <body>
-    <div class="book-container"> 
+    <div class="container"> 
         <h1>Mounika Pratapa</h1>
         <p>Ph.D. Candidate in Electrical and Computer Engineering</p>
 
