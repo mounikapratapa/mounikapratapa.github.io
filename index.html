@@ -44,6 +44,11 @@
             font-size: 2rem;
             font-family: 'Cardo', serif;
         }
+        .about-me p {
+            color: #2e2a26;
+            font-size: 1rem;
+            margin: 0;
+        }
         .content {
             display: flex;
             width: 100%;
@@ -54,9 +59,9 @@
             flex: 1;
             padding-right: 20px;
             border-right: 1px solid #8b5e3c;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            position: sticky;
+            top: 20px; /* Adjust as needed for top spacing */
+            align-self: flex-start;
         }
         .profile-photo {
             width: 150px;
@@ -124,13 +129,14 @@
     <div class="container">
         <div class="about-me">
             <h1>Mounika Pratapa</h1>
+            <p>Ph.D. in Electrical and Computer Engineering</p>
+            <p>University of Western Ontario, London, ON, Canada</p>
+            <p>I am a Ph.D. candidate specializing in cryptography and privacy-enhancing technologies. With over 5 years of research experience, I focus on developing secure multiparty computations and homomorphic encryption schemes. My passion lies in applying these technologies to real-world challenges like private information retrieval and privacy-preserving machine learning.</p>
         </div>
 
         <div class="content">
             <div class="left-column">
                 <img src="Mounika_Pratapa.png" alt="Mounika Pratapa" class="profile-photo">
-                <p>Ph.D. in Electrical and Computer Engineering</p>
-                <p>University of Western Ontario, London, ON, Canada</p>
                 <div class="links">
                     <a href="mailto:mpratapa@uwo.ca" title="Email"><i class="fas fa-envelope"></i></a>
                     <a href="https://github.com/mounikapratapa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -141,11 +147,6 @@
             </div>
 
             <div class="right-column">
-                <section>
-                    <h2>About Me</h2>
-                    <p>I am a Ph.D. candidate specializing in cryptography and privacy-enhancing technologies. With over 5 years of research experience, I focus on developing secure multiparty computations and homomorphic encryption schemes. My passion lies in applying these technologies to real-world challenges like private information retrieval and privacy-preserving machine learning.</p>
-                </section>
-
                 <section>
                     <h2>News</h2>
                     <ul>
@@ -176,8 +177,4 @@
         </div>
 
         <footer>
-            <p>© 2024 Mounika Pratapa. All rights reserved.</p>
-        </footer>
-    </div>
-</body>
-</html
+            <p>© 2024 Mounika Pratapa. All rights
